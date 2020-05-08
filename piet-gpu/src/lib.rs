@@ -302,7 +302,7 @@ impl<D: Device> Renderer<D> {
         cmd_buf.dispatch(
             &self.k2f_pipeline,
             &self.k2f_ds,
-            ((WIDTH / 512) as u32, (HEIGHT / 16) as u32, 2),
+            ((WIDTH / 512) as u32, (HEIGHT / 32) as u32, 2),
         );
         cmd_buf.write_timestamp(&query_pool, 3);
         cmd_buf.memory_barrier();

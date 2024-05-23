@@ -392,7 +392,7 @@ impl BufferSizes {
         // reasonable heuristics.
         let bin_data = BufferSize::new(1 << 21);
         let tiles = BufferSize::new(1 << 21);
-        let lines = BufferSize::new(1 << 21);
+        let lines = BufferSize::new(1 << 28);
         let seg_counts = BufferSize::new(1 << 21);
         let segments = BufferSize::new(1 << 21);
         let ptcl = BufferSize::new(1 << 23);
